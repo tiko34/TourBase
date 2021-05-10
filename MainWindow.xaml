@@ -13,7 +13,7 @@
             <RowDefinition  Height="30"/>
         </Grid.RowDefinitions>
         <Image
-             Source="/logo.png" 
+             Source="Resources/logo.png" 
                 HorizontalAlignment="Left"
             ></Image>
         <TextBlock  Text="Header"   

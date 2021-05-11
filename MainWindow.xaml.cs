@@ -26,15 +26,15 @@ namespace TourBase
             InitializeComponent();
             MainFrame.Navigate(new HotelsPage());
             Manager.MainFrame = MainFrame;
-            ImportTours();
+            //ImportTours();
         }
         private void ImportTours()
         {
-            var filedata = File.ReadAllLines(@"C:\туры.txt");
+            var filedata = File.ReadAllLines(@"C:\Туры.txt");
             var images = Directory.GetFiles(@"C:\ТурыФото");
             foreach (var line in filedata)
             {
-                var data = line.Split('\t');
+                var data = line.Split(',',' ');
                 var tempTour = new Tour
                 {
                     Name = data[0].Replace("\"", ""),

@@ -67,5 +67,10 @@ namespace TourBase
 
             }
         }
+
+        private void BtnView_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new ToursPage());
+        }
     }
 }

@@ -26,7 +26,7 @@ namespace TourBase
             InitializeComponent();
             MainFrame.Navigate(new HotelsPage());
             Manager.MainFrame = MainFrame;
-            ImportTours();
+           // ImportTours();
         }
         private void ImportTours()
         {

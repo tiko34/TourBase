@@ -29,7 +29,14 @@ namespace TourBase
         public byte[] ImagePreview { get; set; }
         public decimal Price { get; set; }
         public bool isActual { get; set; }
-    
+    public string Actialtext 
+        {
+            get
+            {
+                return (isActual) ? "Актуален" : "Завершён";
+            }
+        }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Hotel> Hotel { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -59,5 +59,14 @@
                 Click="BtnDelete_Click">
             
         </Button>
+        <Button
+            Content="Посмотреть туры"
+                Grid.Row="2"
+                HorizontalAlignment="Center"
+            Name="BtnView"
+            Click="BtnView_Click"
+            >
+            
+        </Button>
     </Grid>
 </Page>
